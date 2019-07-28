@@ -6,7 +6,7 @@ class App < Sinatra::Base
   end
 
   post '/checkout' do
-    @team = params[:team]
-    erb :team
+    @item = params[:item]
+    erb :checkout
   end
 end
